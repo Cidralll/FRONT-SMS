@@ -1,6 +1,6 @@
 export default async function SendMsg(/*message: string, number: string*/) {
     let form = {
-        "message": `Oi amor da minha vida!`,
+        "message": `Mensagem`,
         "number": `996263374`
     }
 
