@@ -1,0 +1,12 @@
+.sectionTime {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+
+    .time {
+        margin-top: 15%;
+        margin-left: 35%;
+        font-size: 8rem;
+    }
+}

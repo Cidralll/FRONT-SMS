@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,IAAI;EACtB,OAAO,EAAE,IAAI;CAOhB;;AAXD,AAMI,YANQ,CAMR,KAAK,CAAC;EACF,UAAU,EAAE,GAAG;EACf,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "time.scss"
+    ],
+    "names": [],
+    "file": "time.css"
+}
