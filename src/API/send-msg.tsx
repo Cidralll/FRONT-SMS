@@ -1,7 +1,8 @@
 export default async function SendMsg(/*message: string, number: string*/) {
+    console.log(process.env.REACT_APP_MENSSAGE_SMS)
     let form = {
-        "message": `Mensagem`,
-        "number": `996263374`
+        "message": `${process.env.REACT_APP_MENSSAGE_SMS}`,
+        "number": `${process.env.REACT_APP_NUMBER_SMS}`
     }
 
     let response = await sendRequest(form);
@@ -16,7 +17,7 @@ export default async function SendMsg(/*message: string, number: string*/) {
 }
 
 async function sendRequest(form: any): Promise<Object> {
-    let request = await fetch("http://localhost:3030/send", {
+    let request = await fetch(`${process.env.REACT_APP_API_URL}` , {
         method: 'POST',
         body: JSON.stringify(form),
         headers: new Headers({

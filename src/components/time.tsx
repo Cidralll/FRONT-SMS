@@ -28,7 +28,7 @@ export default function Time() {
         
                 let timeToSend = `${hour}:${minute}:${second}`;
                 
-                if (timeToSend === '14:42:00') {
+                if (timeToSend === `${process.env.REACT_APP_HORARIO_ENVIO}`) {
                     SendMsg();
                     setTime(`${hour}:${minute}:${second}`);
                     
