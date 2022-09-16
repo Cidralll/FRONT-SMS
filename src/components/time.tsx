@@ -4,7 +4,18 @@ import './time.scss';
 
 export default function Time() {
 
-    let [time, setTime] = useState(`00:00:00`);
+    let newDate = new Date();
+        
+    let hour = newDate.getHours();
+    let minute1 = newDate.getMinutes();
+    let second1 = newDate.getSeconds();
+        
+    let minute = addZero(minute1);
+    let second = addZero(second1);
+        
+    let timeInit = `${hour}:${minute}:${second}`;
+
+    let [time, setTime] = useState(`${timeInit}`);
 
     let [status, setStatus] = useState('1');
 
